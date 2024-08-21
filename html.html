@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="#" class="logo"> Alaa Oudhini</a>
+        <nav>
+         <a class="hideNav" href="#">About</a>
+         <a class="hideNav" href="#card">Work</a>
+         <a class="hideNav" href="#skills">Skills</a>
+         <a class="hideNav" href="#Contact">Contact</a>  
+         <a class="btnBar" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        </nav>
+     </div>
+
+     <div class="side-bar">
+        <nav>
+         <a onclick="closeSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+         <a href="#">About</a>
+         <a href="#card">Work</a>
+         <a href="#skills">Skills</a>
+         <a href="#Contact">Contact</a>  
+        </nav>
+     </div>
+
+    <div class="icons">
+        <a href="https://github.com/alaaoudhini" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+        <!--<a href="#"><i class="fa-brands fa-youtube" style="color: #d21919;"></i></a>-->
+        <a href="https://www.linkedin.com/in/alaa-oudhini-3362301ba/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #3679ec;"></i></a>
+        <a href="https://www.behance.net/alaaoudhini" target="_blank"><i class="fa-brands fa-behance" style="color: #3169c9;"></i></i></a>
+    </div>
+
+    <div class="section1">
+     <div class="photo">
+            <img src="ph1.jpg" alt="">
+        </div>
+        <div class="about">
+            <p> Hi There, </p>
+            <p>I'm Alaa <span style="color:#a39519">Oudhini</span></p>
+            <span id="small">I'm a full-stack Developer and also a Designer</span> <br>
+            <input type="button" value="Download My Cv" onclick="downloadCV()"> 
+        </div>
+
+        
+
+    </div>
+
+    <div class="section2">
+    
+        <p class="title"> Work </p>
+
+        <div class="allcard">
+
+            <div id="card">
+            
+                <div class="des">
+                    <img src="bg.jpg" alt="">
+                    <h1>
+                        Web developmen
+                    </h1>
+                    <p>
+                    I have a good experience in Web development
+                    </p>
+                    <button class="btn"> Show Work </button>
+                </div>
+
+            </div>
+    
+     
+        <div id="card">
+            
+            <div class="des">
+                <img src="gd.jpg" alt="">
+                <h1>
+                    Graphic Design
+                </h1>
+                <p>
+                I have a good experience in Graphic Design
+                </p>
+                <button class="btn"> Show Work </button>
+            </div>
+        </div>
+
+        <div id="card">
+            
+            <div class="des">
+                <img src="ae.jpg" alt="">
+                <h1>
+                    Motion graphic
+                </h1>
+                <p>
+                I have a good experience in Motion graphic
+                </p>
+                <button class="btn"> Show Work </button>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="section3">
+
+        <p class="title"> Skills </p>
+
+        <div id="skills">
+
+            <div class="dev">
+
+                <div class="front">
+                    <h3> Front-end</h3>
+                    <i class="fa-brands fa-html5" style="color: #f07b3d;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #2b59e3;"></i>
+                    <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
+                    <i class="fa-brands fa-angular" style="color: #cd1313;"></i>
+                </div>
+
+                <div class="back">
+                    <h3> Back-end</h3>
+                    <i class="fa-brands fa-php"></i>
+                    <i class="fa-brands fa-node"></i>
+                </div>
+
+            </div>
+
+            <div class="dg">
+                <h3> Graphic Design</h3>
+                <div class="ico">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                        <path fill="#03A9F4" d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4V10z"></path><path fill="#020F16" d="M20.016,19.174h-2.002v4.434h1.973c0.547,0,0.97-0.179,1.27-0.537s0.449-0.879,0.449-1.563c0-0.71-0.153-1.274-0.459-1.694S20.53,19.181,20.016,19.174z"></path><path fill="#020F16" d="M9,9v30h30V9H9z M23.365,24.789C22.539,25.597,21.393,26,19.928,26h-1.914v5h-2.871V16.781h4.844c1.406,0,2.528,0.437,3.364,1.309s1.255,2.005,1.255,3.398S24.192,23.981,23.365,24.789z M32.682,30.336c-0.709,0.573-1.641,0.859-2.793,0.859c-0.775,0-1.459-0.151-2.051-0.454s-1.057-0.725-1.392-1.265s-0.503-1.123-0.503-1.748h2.627c0.014,0.481,0.125,0.843,0.337,1.084s0.558,0.361,1.04,0.361c0.742,0,1.113-0.335,1.113-1.006c0-0.234-0.112-0.451-0.337-0.649S30,27.052,29.225,26.713c-1.139-0.462-1.922-0.94-2.349-1.436s-0.64-1.11-0.64-1.846c0-0.925,0.334-1.688,1.001-2.29s1.552-0.903,2.651-0.903c1.158,0,2.086,0.3,2.783,0.898s1.045,1.403,1.045,2.412h-2.764c0-0.859-0.357-1.289-1.074-1.289c-0.293,0-0.533,0.091-0.723,0.273s-0.283,0.437-0.283,0.762c0,0.234,0.104,0.441,0.313,0.62s0.699,0.435,1.475,0.767c1.127,0.417,1.922,0.881,2.388,1.392s0.698,1.174,0.698,1.987C33.746,29.005,33.391,29.763,32.682,30.336z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                            <path fill="#FF5722" d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4V10z"></path><path fill="#1C0802" d="M9,9v30h30V9H9z M23.691,31l-0.762-2.91h-3.916L18.252,31h-3.037l4.443-14.219h2.627L26.758,31H23.691z M30.85,31h-2.773V20.434h2.773V31z M30.552,18.754c-0.271,0.28-0.636,0.42-1.099,0.42s-0.828-0.14-1.099-0.42s-0.405-0.632-0.405-1.055c0-0.43,0.137-0.781,0.41-1.055s0.639-0.41,1.094-0.41s0.82,0.137,1.094,0.41s0.41,0.625,0.41,1.055C30.957,18.122,30.822,18.474,30.552,18.754z"></path><path fill="#1C0802" d="M19.639 25.697L22.295 25.697 20.967 20.629z"></path>
+                            </svg>
+                </div>
+               
+            </div>
+
+            <div class="mot">
+                <h3> Motion Graphic</h3>
+                <div class="ico">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                        <path fill="#b388ff" d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4 V10z"></path><path fill="#170b40" d="M9,9v30h30V9H9z"></path><path fill="#b388ff" d="M21.183 27.965h-4.555l-.866 2.846H13L17.694 17h2.407l4.719 13.81h-2.762L21.183 27.965zM17.33 25.66h3.152l-1.584-5.17L17.33 25.66zM30.146 31c-.728 0-1.379-.13-1.953-.389-.575-.259-1.062-.614-1.464-1.063-.402-.449-.707-.975-.918-1.579-.21-.604-.316-1.25-.316-1.94v-.37c0-.778.103-1.491.308-2.139.204-.648.496-1.206.875-1.674.377-.468.837-.833 1.376-1.096.54-.262 1.145-.394 1.814-.394.675 0 1.27.122 1.784.365.514.243.945.585 1.295 1.025.349.439.612.969.788 1.589S34 24.645 34 25.404v1.167h-5.966c.04.335.123.639.247.91.124.272.283.504.476.697s.42.343.679.451c.26.108.552.161.875.161.456 0 .878-.093 1.264-.28.387-.186.719-.476.996-.868l1.23 1.508c-.15.234-.338.462-.563.683-.225.221-.491.419-.797.593-.306.174-.65.313-1.035.417C31.022 30.948 30.603 31 30.146 31zM29.861 22.577c-.272 0-.509.052-.715.157-.205.104-.381.25-.528.436-.147.186-.267.409-.359.669-.092.259-.158.547-.198.863h3.481v-.218c-.006-.272-.042-.525-.109-.759-.066-.234-.167-.436-.303-.607-.136-.171-.309-.303-.519-.398C30.398 22.625 30.149 22.577 29.861 22.577z"></path>
+                        </svg>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section4" id="Contact">
+
+        <p class="title"> Contact </p>
+
+        <div class="allcardc">
+
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <h1 style="color: rgb(34, 124, 228);">Phone</h1>
+                    <p class="pp">+21654572541</p>  
+                </div>
+
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h1 style="color: rgb(34, 124, 228);">Email</h1>
+                    <p class="pp">alaaoudhini@gmail.com</p>  
+                </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p> Copyrights @ <span style="color:rgb(34, 124, 228)">Alaa Oudhini</span></p>
+        
+    </footer>
+
+    <script>
+
+function showSidebar() {
+    const sidebar = document.querySelector('.side-bar');
+    sidebar.style.display = 'flex';
+    localStorage.setItem('sidebar', 'open'); // Save state to localStorage
+}
+
+// Function to close the sidebar
+function closeSidebar() {
+    const sidebar = document.querySelector('.side-bar');
+    sidebar.style.display = 'none';
+    localStorage.setItem('sidebar', 'closed'); // Save state to localStorage
+}
+
+// Check sidebar state on page load
+window.onload = function() {
+    const sidebarState = localStorage.getItem('sidebar');
+    const sidebar = document.querySelector('.side-bar');
+    if (sidebarState === 'open') {
+        sidebar.style.display = 'flex';
+    } else {
+        sidebar.style.display = 'none';
+    }
+};
+
+function downloadCV() {
+            // Replace the URL with the actual link to your CV
+            const cvUrl = 'My_CV.pdf';
+            const link = document.createElement('a');
+            link.href = cvUrl;
+            link.download = 'My_CV.pdf'; // Specify the name of the file to download
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+    </script>
+    
+</body>
+</html>
